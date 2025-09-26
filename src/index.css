@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Butcherman&display=swap');
+
+body {
+  /* Very dark background for atmosphere */
+  background-color: #1a0808; 
+  color: #e2e2e2; /* Light text */
+  font-family: 'Inter', sans-serif;
+}
+
+/* You need to define these in your CSS file */
+.game-active-wrapper {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    
+    /* --- CRITICAL FIX 1: Ensure splash screen takes full width/height --- */
+    width: 100%;
+    position: absolute; /* Take it out of the normal document flow */
+    top: 0;
+    left: 0;
+    z-index: 100; /* Ensure it covers everything if needed */
+}
+.bg-town { background-image: url(assets/Bgs/Town.png); }
+.bg-albularyo { background-image: url(assets/Bgs/albularyo.png); }
+.bg-captain { background-image: url(assets/Bgs/captain.png); }
+.bg-church { background-image: url(assets/Bgs/church.png);}
+.bg-belfry { background-image: url(assets/Bgs/belfry.png); }
+.bg-wakwak_defeated { background-image: url(assets/Bgs/wakwak_defeated.png); }
+.bg-altar { background-image:  url(assets/Bgs/altar.png); }
+.bg-fields { background-image: url(assets/Bgs/fields.png); }
+.bg-tiyanak { background-image: url(assets/Bgs/tiyanak.png); }
+.bg-balete { background-image: url(assets/Bgs/balete.jpg); }
+.bg-victory { background-image: url(assets/Bgs/victory.png); }
+.bg-gameover { background-image: url(assets/Bgs/defeat.png); }
+
+.story-display {
+  background-color: rgba(0, 0, 0, 0.619) !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.splash-screen {
+  background-image: url(assets/Bgs/Background.png); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  width: 100%;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  z-index: 100; 
+}
+
+.story-display {
+  background-color: #2c1a1a;
+  border: 1px solid #720000;
+  box-shadow: 0 0 20px rgba(114, 0, 0, 0.5);
+}
+
+.story-text {
+  white-space: pre-wrap;
+  font-size: 1.1rem;
+  color: #f5f5f5;
+}
+
+.start-screen {
+  background-color: transparent !important; 
+  border: none !important; 
+  box-shadow: none !important; 
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 90%; 
+}
+
+.ending-screen {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.horror-title {
+  font-family: 'ButcherMan', cursive;
+  font-size: clamp(7.5rem, 12vw, 8rem);
+  color: #ff0000;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8), 0 0 15px #ff0000;
+  margin-bottom: 0.5rem;
+}
+
+.input-center {
+  text-align: center;
+}
+
+.stats-overlay {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    width: 300px;
+    
+    background-color: transparent !important; 
+    border: none !important;
+    box-shadow: none !important;
+    
+    text-shadow: 1px 1px 2px #000; 
+}
